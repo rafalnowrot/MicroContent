@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "2ddb5YW6F3vbf+ejrphZHL1gniLk0TTLM3CIQbk2XJY=",
+  "Source": "MicroContent.Transactions.API",
+  "BasePath": "_content/MicroContent.Transactions.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

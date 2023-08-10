@@ -1,0 +1,12 @@
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Domain\bin\Debug\net7.0\MicroContent.Transactions.Domain.deps.json
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Domain\bin\Debug\net7.0\MicroContent.Transactions.Domain.dll
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Domain\bin\Debug\net7.0\MicroContent.Transactions.Domain.pdb
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Domain\obj\Debug\net7.0\MicroContent.Transactions.Domain.csproj.AssemblyReference.cache
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Domain\obj\Debug\net7.0\MicroContent.Transactions.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Domain\obj\Debug\net7.0\MicroContent.Transactions.Domain.AssemblyInfoInputs.cache
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Domain\obj\Debug\net7.0\MicroContent.Transactions.Domain.AssemblyInfo.cs
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Domain\obj\Debug\net7.0\MicroContent.Transactions.Domain.csproj.CoreCompileInputs.cache
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Domain\obj\Debug\net7.0\MicroContent.Transactions.Domain.dll
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Domain\obj\Debug\net7.0\refint\MicroContent.Transactions.Domain.dll
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Domain\obj\Debug\net7.0\MicroContent.Transactions.Domain.pdb
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Domain\obj\Debug\net7.0\ref\MicroContent.Transactions.Domain.dll

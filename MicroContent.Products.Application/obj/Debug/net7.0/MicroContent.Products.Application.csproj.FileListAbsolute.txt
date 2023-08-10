@@ -1,0 +1,15 @@
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\bin\Debug\net7.0\MicroContent.Products.Application.deps.json
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\bin\Debug\net7.0\MicroContent.Products.Application.dll
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\bin\Debug\net7.0\MicroContent.Products.Application.pdb
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\bin\Debug\net7.0\MicroContent.Products.Domain.dll
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\bin\Debug\net7.0\MicroContent.Products.Domain.pdb
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\obj\Debug\net7.0\MicroContent.Products.Application.csproj.AssemblyReference.cache
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\obj\Debug\net7.0\MicroContent.Products.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\obj\Debug\net7.0\MicroContent.Products.Application.AssemblyInfoInputs.cache
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\obj\Debug\net7.0\MicroContent.Products.Application.AssemblyInfo.cs
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\obj\Debug\net7.0\MicroContent.Products.Application.csproj.CoreCompileInputs.cache
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\obj\Debug\net7.0\MicroContent.Products.Application.csproj.CopyComplete
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\obj\Debug\net7.0\MicroContent.Products.Application.dll
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\obj\Debug\net7.0\refint\MicroContent.Products.Application.dll
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\obj\Debug\net7.0\MicroContent.Products.Application.pdb
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\obj\Debug\net7.0\ref\MicroContent.Products.Application.dll

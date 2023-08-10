@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "yZqHid7B5+dkoCjH0NiwCgp7f18t5DAA/xuB4HGv0N7JPXAZB63yiM07YVPfpY906cEr6PLF+Ygves+ONsT3Hg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rafal\\source\\repos\\MicroContent\\MicroContent.Transactions.Application\\MicroContent.Transactions.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rafal\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\rafal\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
+    "C:\\Users\\rafal\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\rafal\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

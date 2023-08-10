@@ -1,0 +1,17 @@
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transaction.Infrastructure\bin\Debug\net7.0\MicroContent.Transactions.Infrastructure.deps.json
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transaction.Infrastructure\bin\Debug\net7.0\MicroContent.Transactions.Infrastructure.dll
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transaction.Infrastructure\bin\Debug\net7.0\MicroContent.Transactions.Infrastructure.pdb
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transaction.Infrastructure\bin\Debug\net7.0\MicroContent.Transactions.Application.dll
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transaction.Infrastructure\bin\Debug\net7.0\MicroContent.Transactions.Domain.dll
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transaction.Infrastructure\bin\Debug\net7.0\MicroContent.Transactions.Application.pdb
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transaction.Infrastructure\bin\Debug\net7.0\MicroContent.Transactions.Domain.pdb
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transaction.Infrastructure\obj\Debug\net7.0\MicroContent.Transactions.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transaction.Infrastructure\obj\Debug\net7.0\MicroContent.Transactions.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transaction.Infrastructure\obj\Debug\net7.0\MicroContent.Transactions.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transaction.Infrastructure\obj\Debug\net7.0\MicroContent.Transactions.Infrastructure.AssemblyInfo.cs
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transaction.Infrastructure\obj\Debug\net7.0\MicroContent.Transactions.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transaction.Infrastructure\obj\Debug\net7.0\MicroContent.Transactions.Infrastructure.csproj.CopyComplete
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transaction.Infrastructure\obj\Debug\net7.0\MicroContent.Transactions.Infrastructure.dll
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transaction.Infrastructure\obj\Debug\net7.0\refint\MicroContent.Transactions.Infrastructure.dll
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transaction.Infrastructure\obj\Debug\net7.0\MicroContent.Transactions.Infrastructure.pdb
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transaction.Infrastructure\obj\Debug\net7.0\ref\MicroContent.Transactions.Infrastructure.dll

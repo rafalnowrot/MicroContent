@@ -1,0 +1,15 @@
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Application\bin\Debug\net7.0\MicroContent.Transactions.Application.deps.json
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Application\bin\Debug\net7.0\MicroContent.Transactions.Application.dll
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Application\bin\Debug\net7.0\MicroContent.Transactions.Application.pdb
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Application\bin\Debug\net7.0\MicroContent.Transactions.Domain.dll
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Application\bin\Debug\net7.0\MicroContent.Transactions.Domain.pdb
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Application\obj\Debug\net7.0\MicroContent.Transactions.Application.csproj.AssemblyReference.cache
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Application\obj\Debug\net7.0\MicroContent.Transactions.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Application\obj\Debug\net7.0\MicroContent.Transactions.Application.AssemblyInfoInputs.cache
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Application\obj\Debug\net7.0\MicroContent.Transactions.Application.AssemblyInfo.cs
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Application\obj\Debug\net7.0\MicroContent.Transactions.Application.csproj.CoreCompileInputs.cache
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Application\obj\Debug\net7.0\MicroContent.Transactions.Application.csproj.CopyComplete
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Application\obj\Debug\net7.0\MicroContent.Transactions.Application.dll
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Application\obj\Debug\net7.0\refint\MicroContent.Transactions.Application.dll
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Application\obj\Debug\net7.0\MicroContent.Transactions.Application.pdb
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Transactions.Application\obj\Debug\net7.0\ref\MicroContent.Transactions.Application.dll
