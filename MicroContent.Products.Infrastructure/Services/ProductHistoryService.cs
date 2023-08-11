@@ -20,7 +20,8 @@ public class ProductHistoryService: IRepository<ProductPriceHistory>
 
     public async Task Save(ProductPriceHistory request)
     {
-        throw new NotImplementedException();
+        _context.ProductPriceHistoryList.Add(request);
+        _context.SaveChanges();
     }
 
     public async Task Delete(ProductPriceHistory request)
@@ -33,12 +34,12 @@ public class ProductHistoryService: IRepository<ProductPriceHistory>
         throw new NotImplementedException();
     }
 
-    public async Task GetById(Guid id)
+    public async Task<ProductPriceHistory> GetById(Guid id)
     {
         throw new NotImplementedException();
     }
 
-    public async Task GetById(int id)
+    public async Task<ProductPriceHistory> GetById(int id)
     {
         throw new NotImplementedException();
     }

@@ -1,19 +1,24 @@
 ﻿using MediatR;
 using MicroContent.Products.Domain.Interface;
+using MicroContent.Products.Domain.Models;
+using MicroContent.Products.Domain.Types;
+using MicroContent.Products.Domain.Value_Objects;
 
 namespace MicroContent.Products.Application.Commands;
 
 public class UpdateProduct : IRequest<bool>
 {
-    public string AdressFrom { get; set; }
-    public string AdressTo { get; set; }
-    public string LocationByIp { get; set; }
+    public ProductId Id { get; set; }
+    public string Name { get; set; }
+    public decimal Price { get; set; }
+    public ProductType Status { get; set; }
 
-    public UpdateProduct(string adressFrom, string adressTo, string locationByIp)
+    public UpdateProduct(Guid id, string name, decimal price, string productType)
     {
-        AdressFrom = adressFrom;
-        AdressTo = adressTo;
-        LocationByIp = locationByIp;
+        Id = new ProductId(id);
+        Name = name;
+        Price = price;
+        Status = new ProductType(productType);
     }
 }
 
@@ -32,8 +37,19 @@ public class UpdateProductHandler : IRequestHandler<UpdateProduct, bool>
 
     public async Task<bool> Handle(UpdateProduct request, CancellationToken cancellationToken)
     {
-        //await _productsService.Update();
-        //await _productsHistoryService.Save();
+        var productToUpdate = await _productsService.GetById(request.Id.Value);
+        if (productToUpdate == null) { }
+
+        productToUpdate.Name = request.Name;
+        productToUpdate.Price = request.Price;
+        productToUpdate.Status = request.Status.Value;
+        productToUpdate.LastUpdateDate = DateTime.UtcNow;
+
+        await _productsService.Update(productToUpdate);
+        await _productsHistoryService.Save(
+            new ProductPriceHistory {CreatedDate = DateTime.Now,
+                Price = request.Price,
+                ProductId = request.Id});
 
         return true;
     }

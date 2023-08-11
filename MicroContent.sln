@@ -19,13 +19,20 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroContent.Transactions.A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Products", "Products", "{A54EF752-12E5-43F8-9D61-472642644D5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroContent.Products.API", "MicroContent.Products.API\MicroContent.Products.API.csproj", "{D63FD9CF-1DEB-4A32-914C-2B4CCA0E38C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroContent.Products.API", "MicroContent.Products.API\MicroContent.Products.API.csproj", "{D63FD9CF-1DEB-4A32-914C-2B4CCA0E38C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroContent.Products.Application", "MicroContent.Products.Application\MicroContent.Products.Application.csproj", "{92824AEB-90DF-4466-97AF-8F3EAC3E63F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroContent.Products.Application", "MicroContent.Products.Application\MicroContent.Products.Application.csproj", "{92824AEB-90DF-4466-97AF-8F3EAC3E63F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroContent.Products.Domain", "MicroContent.Products.Domain\MicroContent.Products.Domain.csproj", "{DDD8D52C-069D-4F18-AF66-38279E757505}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroContent.Products.Domain", "MicroContent.Products.Domain\MicroContent.Products.Domain.csproj", "{DDD8D52C-069D-4F18-AF66-38279E757505}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroContent.Products.Infrastructure", "MicroContent.Products.Infrastructure\MicroContent.Products.Infrastructure.csproj", "{114B8F24-B448-4E11-9531-667D51393949}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroContent.Products.Infrastructure", "MicroContent.Products.Infrastructure\MicroContent.Products.Infrastructure.csproj", "{114B8F24-B448-4E11-9531-667D51393949}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompanyProducts", "CompanyProducts", "{0B056EBE-6E42-4EBF-B4EF-207313D2A6C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{70185681-0C8E-4B80-B3E5-0357223F236E}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +88,7 @@ Global
 		{92824AEB-90DF-4466-97AF-8F3EAC3E63F3} = {A54EF752-12E5-43F8-9D61-472642644D5A}
 		{DDD8D52C-069D-4F18-AF66-38279E757505} = {A54EF752-12E5-43F8-9D61-472642644D5A}
 		{114B8F24-B448-4E11-9531-667D51393949} = {A54EF752-12E5-43F8-9D61-472642644D5A}
+		{0B056EBE-6E42-4EBF-B4EF-207313D2A6C3} = {B7696CC1-C73B-44E1-84A1-CE534DB8881F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB6A72F8-7636-47EA-9877-EEB74B161E37}
