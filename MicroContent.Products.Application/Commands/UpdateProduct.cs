@@ -8,17 +8,17 @@ namespace MicroContent.Products.Application.Commands;
 
 public class UpdateProduct : IRequest<bool>
 {
-    public ProductId Id { get; set; }
+    public Guid Id { get; set; }
     public string Name { get; set; }
     public decimal Price { get; set; }
-    public ProductType Status { get; set; }
+    public string Status { get; set; }
 
-    public UpdateProduct(Guid id, string name, decimal price, string productType)
+    public UpdateProduct(Guid id, string name, decimal price, string status)
     {
-        Id = new ProductId(id);
+        Id = id;
         Name = name;
         Price = price;
-        Status = new ProductType(productType);
+        Status = status;
     }
 }
 
@@ -37,19 +37,23 @@ public class UpdateProductHandler : IRequestHandler<UpdateProduct, bool>
 
     public async Task<bool> Handle(UpdateProduct request, CancellationToken cancellationToken)
     {
-        var productToUpdate = await _productsService.GetById(request.Id.Value);
+        var productToUpdate = await _productsService.GetById(request.Id);
         if (productToUpdate == null) { }
 
         productToUpdate.Name = request.Name;
-        productToUpdate.Price = request.Price;
-        productToUpdate.Status = request.Status.Value;
+
+        if (productToUpdate.Price != request.Price)
+        {
+            productToUpdate.Price = request.Price;
+            await _productsHistoryService.Save(
+                new ProductPriceHistory {CreatedDate = DateTime.Now,
+                    Price = request.Price,
+                    ProductId = request.Id});
+        }
+        productToUpdate.Status = request.Status;
         productToUpdate.LastUpdateDate = DateTime.UtcNow;
 
         await _productsService.Update(productToUpdate);
-        await _productsHistoryService.Save(
-            new ProductPriceHistory {CreatedDate = DateTime.Now,
-                Price = request.Price,
-                ProductId = request.Id});
 
         return true;
     }

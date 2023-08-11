@@ -18,30 +18,21 @@ namespace MicroContent.Products.API.Controllers
         {
             _mediator = mediator;
         }
-
-        // GET: api/<ProductsController>
+        
         [HttpGet]
         public async Task<IEnumerable<ProductDto>> Get()
         {
             return await _mediator.Send(new GetProductsList());
         }
-
-        // GET api/<ProductsController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<ProductsController>
+        
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<bool> Post( PostProduct command)
         {
+            return  await _mediator.Send(command);
         }
-
-        // PUT api/<ProductsController>/5
-        [HttpPut("{id}")]
-        public async Task<bool> PutAsync(int id, [FromBody] UpdateProduct command)
+        
+        [HttpPut]
+        public async Task<bool> PutAsync(UpdateProduct command)
         {
             return await _mediator.Send(command);
         }

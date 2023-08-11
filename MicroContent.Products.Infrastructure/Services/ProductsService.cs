@@ -20,24 +20,24 @@ public class ProductsService : IRepository<Product>
     public async Task Save(Product request)
     {
         _context.Products.Add(request);
-        _context.SaveChangesAsync();
+        _context.SaveChanges();
     }
 
     public async Task Delete(Product request)
     {
         _context.Products.Remove(request);
-        _context.SaveChangesAsync();
+        _context.SaveChanges();
     }
 
     public async Task Update(Product request)
     {
         _context.Products.Update(request);
-        _context.SaveChangesAsync();
+        _context.SaveChanges();
     }
 
     public async Task<Product> GetById(Guid id)
     {
-        throw new NotImplementedException();
+        return _context.Products.FirstOrDefault(x=> x.Id == id);
     }
 
     public async Task<Product> GetById(int id)
