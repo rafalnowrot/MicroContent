@@ -34,6 +34,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroContent.CompanyProduct.API", "MicroContent.CompanyProduct.API\MicroContent.CompanyProduct.API.csproj", "{842CA8CE-9B5A-473D-9477-9B1769EC0186}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,6 +74,10 @@ Global
 		{114B8F24-B448-4E11-9531-667D51393949}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{114B8F24-B448-4E11-9531-667D51393949}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{114B8F24-B448-4E11-9531-667D51393949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{842CA8CE-9B5A-473D-9477-9B1769EC0186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{842CA8CE-9B5A-473D-9477-9B1769EC0186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{842CA8CE-9B5A-473D-9477-9B1769EC0186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{842CA8CE-9B5A-473D-9477-9B1769EC0186}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,6 +95,7 @@ Global
 		{DDD8D52C-069D-4F18-AF66-38279E757505} = {A54EF752-12E5-43F8-9D61-472642644D5A}
 		{114B8F24-B448-4E11-9531-667D51393949} = {A54EF752-12E5-43F8-9D61-472642644D5A}
 		{0B056EBE-6E42-4EBF-B4EF-207313D2A6C3} = {B7696CC1-C73B-44E1-84A1-CE534DB8881F}
+		{842CA8CE-9B5A-473D-9477-9B1769EC0186} = {0B056EBE-6E42-4EBF-B4EF-207313D2A6C3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB6A72F8-7636-47EA-9877-EEB74B161E37}
