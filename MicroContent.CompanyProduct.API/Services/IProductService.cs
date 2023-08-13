@@ -1,5 +1,4 @@
 ﻿using MicroContent.CompanyProduct.API.Models;
-using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
@@ -21,15 +20,8 @@ public class ProductService : IProductService
     }
 
     public async Task<IEnumerable<Product>> GetAllProducts()
-    {
-        try
-        {
-            return await _context.Products.Find(_ => true).ToListAsync();
-        }
-        catch 
-        {
-            throw;
-        }
+    { 
+        return await _context.Products.Find(_ => true).ToListAsync();
     }
     
     public async Task Save(Product product)

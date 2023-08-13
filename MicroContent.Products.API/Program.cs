@@ -1,3 +1,4 @@
+using MassTransit;
 using MediatR;
 using MicroContent.Products.Application;
 using MicroContent.Products.Infrastructure;
@@ -13,6 +14,21 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddInfrastructure();
 builder.Services.AddMediatR(typeof(ApplicationMediatREntrypoint).Assembly);
+
+//builder.Services.AddMassTransit(x =>
+//{
+//    x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(config =>
+//    {
+//        config.UseHealthCheck(provider);
+//        config.Host(new Uri("rabbitmq://localhost"), h =>
+//        {
+//            h.Username("guest");
+//            h.Password("guest");
+//        });
+//    }));
+//});
+//builder.Services.AddMassTransitHostedService();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

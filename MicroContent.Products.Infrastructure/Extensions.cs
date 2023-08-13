@@ -1,4 +1,5 @@
-﻿using MicroContent.Products.Domain.Interface;
+﻿using MassTransit;
+using MicroContent.Products.Domain.Interface;
 using MicroContent.Products.Domain.Models;
 using MicroContent.Products.Infrastructure.Services;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,6 +15,19 @@ namespace MicroContent.Products.Infrastructure
                 .AddScoped<IRepository<ProductPriceHistory>, ProductHistoryService>()
         .AddDbContext<ProductsDbContext>(options =>
             options.UseSqlServer
-            ("data source=DESKTOP-4LM8G0M;initial catalog=ProductsDB;trusted_connection=true;Trust Server Certificate = true"));
+            ("data source=DESKTOP-4LM8G0M;initial catalog=ProductsDB;trusted_connection=true;Trust Server Certificate = true"))
+        .AddMassTransit(x =>
+        {
+            x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(config =>
+            {
+                config.UseHealthCheck(provider);
+                config.Host(new Uri("rabbitmq://localhost"), h =>
+                {
+                    h.Username("guest");
+                    h.Password("guest");
+                });
+            }));
+        })
+    .AddMassTransitHostedService();
     }
 }

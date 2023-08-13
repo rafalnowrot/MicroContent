@@ -1,6 +1,9 @@
+using GreenPipes;
 using MicroContent.CompanyProduct.API.Models;
 using MicroContent.CompanyProduct.API.Services;
 using Microsoft.Extensions.Configuration;
+using MassTransit;
+using MassTransit.AspNetCoreIntegration.HealthChecks;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +22,28 @@ builder.Services.Configure<Settings>(options =>
 
 builder.Services.AddTransient<IProductService, ProductService>();
 
+//builder.Services.AddHostedService<MessageReceiverService>();
+
+builder.Services.AddMassTransit(x =>
+{
+    x.AddConsumer<ProductConsumer>();
+    x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
+    {
+        cfg.UseHealthCheck(provider);
+        cfg.Host(new Uri("rabbitmq://localhost"), h =>
+        {
+            h.Username("guest");
+            h.Password("guest");
+        });
+        cfg.ReceiveEndpoint("productQueue", ep =>
+        {
+            ep.PrefetchCount = 16;
+            ep.UseMessageRetry(r => r.Interval(2, 100));
+            ep.ConfigureConsumer<ProductConsumer>(provider);
+        });
+    }));
+});
+builder.Services.AddMassTransitHostedService();
 
 var app = builder.Build();
 
