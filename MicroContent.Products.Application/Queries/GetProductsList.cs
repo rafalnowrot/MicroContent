@@ -22,10 +22,10 @@ public class GetProductsListHandler : IRequestHandler<GetProductsList, IEnumerab
         var response = (await _productsService.GetAll())
             .Select(x=>new ProductDto
             {
-                Id = new ProductId(x.Id), 
-                Name = x.Name,
-                Price = x.Price,
-                Status = new ProductType(x.Status)
+                Id = x.GetId, 
+                Name = x.GetName,
+                Price = x.GetPrice,
+                Status = x.GetStatus
             }).AsEnumerable();
 
         return response;

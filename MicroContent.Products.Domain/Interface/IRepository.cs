@@ -1,4 +1,6 @@
-﻿namespace MicroContent.Products.Domain.Interface;
+﻿using MicroContent.Products.Domain.Models;
+
+namespace MicroContent.Products.Domain.Interface;
 
 public interface IRepository<T> where T : class
 {
@@ -8,4 +10,6 @@ public interface IRepository<T> where T : class
     Task Update(T request);
     Task<T> GetById(Guid id);
     Task<T> GetById(int id);
+    Task SendProductToCompanyX(T product);
+    Task SaveChangesAsync(CancellationToken cancellationToken);
 }

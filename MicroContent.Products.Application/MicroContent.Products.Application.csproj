@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MicroContent.CompanyProduct.API\MicroContent.CompanyProduct.API.csproj" />
     <ProjectReference Include="..\MicroContent.Products.Domain\MicroContent.Products.Domain.csproj" />
+    <ProjectReference Include="..\MicroContent.Products.Infrastructure\MicroContent.Products.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

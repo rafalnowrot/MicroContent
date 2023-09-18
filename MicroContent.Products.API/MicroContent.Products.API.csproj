@@ -25,7 +25,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MicroContent.Products.Application\MicroContent.Products.Application.csproj" />
-    <ProjectReference Include="..\MicroContent.Products.Infrastructure\MicroContent.Products.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

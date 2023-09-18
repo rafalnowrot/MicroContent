@@ -4,7 +4,7 @@ namespace MicroContent.Products.Domain.Types;
 
 public class ProductId
 {
-    public Guid Value { get; }
+    public Guid Value { get; set; }
 
     public ProductId(Guid value)
     {

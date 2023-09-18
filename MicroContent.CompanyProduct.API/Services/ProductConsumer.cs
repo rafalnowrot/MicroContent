@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 
 namespace MicroContent.CompanyProduct.API.Services;
 
-public class ProductConsumer : IConsumer<Product>
+public class ProductConsumer : IConsumer<Commons.CompanyProduct>
 {
     private readonly IProductService _productService;
 
@@ -17,7 +17,7 @@ public class ProductConsumer : IConsumer<Product>
 
     }
 
-    public async Task Consume(ConsumeContext<Product> context)
+    public async Task Consume(ConsumeContext<Commons.CompanyProduct> context)
     {
         Console.WriteLine("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
         var data = context.Message;
@@ -25,7 +25,7 @@ public class ProductConsumer : IConsumer<Product>
         {
             await _productService.Save(data);
         }
-        context.Respond(data);
+        //context.Respond(data);
     }
 }
 

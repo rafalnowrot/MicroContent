@@ -1442,23 +1442,12 @@
           }
         }
       },
-      "MicroContent.Products.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "MediatR": "11.1.0",
-          "MicroContent.Products.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/MicroContent.Products.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MicroContent.Products.Application.dll": {}
-        }
-      },
       "MicroContent.Products.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "MediatR": "11.1.0"
+        },
         "compile": {
           "bin/placeholder/MicroContent.Products.Domain.dll": {}
         },
@@ -4233,11 +4222,6 @@
         "version.txt"
       ]
     },
-    "MicroContent.Products.Application/1.0.0": {
-      "type": "project",
-      "path": "../MicroContent.Products.Application/MicroContent.Products.Application.csproj",
-      "msbuildProject": "../MicroContent.Products.Application/MicroContent.Products.Application.csproj"
-    },
     "MicroContent.Products.Domain/1.0.0": {
       "type": "project",
       "path": "../MicroContent.Products.Domain/MicroContent.Products.Domain.csproj",
@@ -4250,7 +4234,8 @@
       "MassTransit.AspNetCore >= 7.3.1",
       "MassTransit.Extensions.DependencyInjection >= 7.3.1",
       "MassTransit.RabbitMQ >= 7.3.1",
-      "MicroContent.Products.Application >= 1.0.0",
+      "MediatR >= 11.1.0",
+      "MicroContent.Products.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.10",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.10",
@@ -4291,8 +4276,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\rafal\\source\\repos\\MicroContent\\MicroContent.Products.Application\\MicroContent.Products.Application.csproj": {
-              "projectPath": "C:\\Users\\rafal\\source\\repos\\MicroContent\\MicroContent.Products.Application\\MicroContent.Products.Application.csproj"
+            "C:\\Users\\rafal\\source\\repos\\MicroContent\\MicroContent.Products.Domain\\MicroContent.Products.Domain.csproj": {
+              "projectPath": "C:\\Users\\rafal\\source\\repos\\MicroContent\\MicroContent.Products.Domain\\MicroContent.Products.Domain.csproj"
             }
           }
         }
@@ -4322,6 +4307,10 @@
           "MassTransit.RabbitMQ": {
             "target": "Package",
             "version": "[7.3.1, )"
+          },
+          "MediatR": {
+            "target": "Package",
+            "version": "[11.1.0, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

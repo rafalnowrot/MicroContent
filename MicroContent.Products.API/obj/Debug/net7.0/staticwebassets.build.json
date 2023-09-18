@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "cGVq3BdjMtaZIZ+fNTTFDSkZlU0YiTpIGmfz2E3e/no=",
+  "Hash": "wE+O/69tp0tCiDne2wSu9cpw1AgV27J2f9hGamhNxbQ=",
   "Source": "MicroContent.Products.API",
   "BasePath": "_content/MicroContent.Products.API",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\rafal\\source\\repos\\MicroContent\\MicroContent.CompanyProduct.API\\MicroContent.CompanyProduct.API.csproj",
+      "Version": 2,
+      "Source": "MicroContent.CompanyProduct.API",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [],
   "Assets": []
 }

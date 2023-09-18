@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MicroContent.Products.Infrastructure.Migrations
 {
     [DbContext(typeof(ProductsDbContext))]
-    [Migration("20230810200815_Initial")]
-    partial class Initial
+    [Migration("20230918191227_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -28,7 +28,6 @@ namespace MicroContent.Products.Infrastructure.Migrations
             modelBuilder.Entity("MicroContent.Products.Domain.Models.Product", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedDate")

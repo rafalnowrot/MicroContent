@@ -13,3 +13,12 @@ C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\obj\D
 C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\obj\Debug\net7.0\refint\MicroContent.Products.Application.dll
 C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\obj\Debug\net7.0\MicroContent.Products.Application.pdb
 C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\obj\Debug\net7.0\ref\MicroContent.Products.Application.dll
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\bin\Debug\net7.0\MicroContent.CompanyProduct.API.deps.json
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\bin\Debug\net7.0\MicroContent.CompanyProduct.API.runtimeconfig.json
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\bin\Debug\net7.0\appsettings.json
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\bin\Debug\net7.0\MicroContent.CompanyProduct.API.exe
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\bin\Debug\net7.0\MicroContent.CompanyProduct.API.dll
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\bin\Debug\net7.0\MicroContent.Products.Infrastructure.dll
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\bin\Debug\net7.0\MicroContent.CompanyProduct.API.pdb
+C:\Users\rafal\source\repos\MicroContent\MicroContent.Products.Application\bin\Debug\net7.0\MicroContent.Products.Infrastructure.pdb

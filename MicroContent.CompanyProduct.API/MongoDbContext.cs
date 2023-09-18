@@ -15,8 +15,8 @@ public class MongoDbContext
             _database = client.GetDatabase(settings.Value.Database);
     }
 
-    public IMongoCollection<Product> Products
+    public IMongoCollection<Commons.CompanyProduct> Products
     {
-        get { return _database.GetCollection<Product>("Products");}
+        get { return _database.GetCollection<Commons.CompanyProduct>("Products");}
     }
 }

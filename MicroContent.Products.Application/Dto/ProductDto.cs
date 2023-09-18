@@ -13,6 +13,6 @@ namespace MicroContent.Products.Application.Dto
         public ProductId Id { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }
-        public ProductType Status { get; set; }
+        public ProductStatus Status { get; set; }
     }
 }

@@ -6,8 +6,8 @@ namespace MicroContent.CompanyProduct.API.Services;
 
 public interface IProductService
 {
-    Task Save(Product product);
-    Task<IEnumerable<Product>> GetAllProducts();
+    Task Save(Commons.CompanyProduct product);
+    Task<IEnumerable<Commons.CompanyProduct>> GetAllProducts();
 }
 
 public class ProductService : IProductService
@@ -19,12 +19,12 @@ public class ProductService : IProductService
         _context = new MongoDbContext(settings);
     }
 
-    public async Task<IEnumerable<Product>> GetAllProducts()
+    public async Task<IEnumerable<Commons.CompanyProduct>> GetAllProducts()
     { 
         return await _context.Products.Find(_ => true).ToListAsync();
     }
     
-    public async Task Save(Product product)
+    public async Task Save(Commons.CompanyProduct product)
     {
         await _context.Products.InsertOneAsync(product);
     }

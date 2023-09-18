@@ -4,6 +4,7 @@ using MicroContent.CompanyProduct.API.Services;
 using Microsoft.Extensions.Configuration;
 using MassTransit;
 using MassTransit.AspNetCoreIntegration.HealthChecks;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -44,6 +45,23 @@ builder.Services.AddMassTransit(x =>
     }));
 });
 builder.Services.AddMassTransitHostedService();
+
+
+//builder.Services.AddMassTransit(busConfigurator =>
+//{
+//    var entryAssembly = Assembly.GetExecutingAssembly();
+//    busConfigurator.AddConsumers(entryAssembly);
+//    busConfigurator.UsingRabbitMq((context, busFactoryConfigurator) =>
+//    {
+//        busFactoryConfigurator.Host(new Uri("rabbitmq://localhost"), h =>
+//        {
+//            h.Username("guest");
+//            h.Password("guest");
+//        });
+
+//        busFactoryConfigurator.ConfigureEndpoints(context);
+//    });
+//});
 
 var app = builder.Build();
 

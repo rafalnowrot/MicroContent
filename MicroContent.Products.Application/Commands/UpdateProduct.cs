@@ -40,20 +40,20 @@ public class UpdateProductHandler : IRequestHandler<UpdateProduct, bool>
         var productToUpdate = await _productsService.GetById(request.Id);
         if (productToUpdate == null) { }
 
-        productToUpdate.Name = request.Name;
+        //productToUpdate.Name = request.Name;
 
-        if (productToUpdate.Price != request.Price)
-        {
-            productToUpdate.Price = request.Price;
-            await _productsHistoryService.Save(
-                new ProductPriceHistory {CreatedDate = DateTime.Now,
-                    Price = request.Price,
-                    ProductId = request.Id});
-        }
-        productToUpdate.Status = request.Status;
-        productToUpdate.LastUpdateDate = DateTime.UtcNow;
+        //if (productToUpdate.Price != request.Price)
+        //{
+        //    productToUpdate.Price = request.Price;
+        //    await _productsHistoryService.Save(
+        //        new ProductPriceHistory {CreatedDate = DateTime.Now,
+        //            Price = request.Price,
+        //            ProductId = request.Id});
+        //}
+        //productToUpdate.Status = request.Status;
+        //productToUpdate.LastUpdateDate = DateTime.UtcNow;
 
-        await _productsService.Update(productToUpdate);
+        //await _productsService.Update(productToUpdate);
 
         return true;
     }

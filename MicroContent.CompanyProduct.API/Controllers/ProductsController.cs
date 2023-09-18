@@ -17,13 +17,13 @@ public class ProductsController : ControllerBase
     }
     
     [HttpGet]
-    public async Task<IEnumerable<Product>> Get()
+    public async Task<IEnumerable<Commons.CompanyProduct>> Get()
     {
         return await _productService.GetAllProducts();
     }
     
     [HttpPost]
-    public async Task Post(Product request)
+    public async Task Post(Commons.CompanyProduct request)
     {
         await _productService.Save(request);
     }

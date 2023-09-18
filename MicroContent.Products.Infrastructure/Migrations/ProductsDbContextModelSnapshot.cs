@@ -25,7 +25,6 @@ namespace MicroContent.Products.Infrastructure.Migrations
             modelBuilder.Entity("MicroContent.Products.Domain.Models.Product", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedDate")

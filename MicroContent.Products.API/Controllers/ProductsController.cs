@@ -20,18 +20,23 @@ namespace MicroContent.Products.API.Controllers
         }
         
         [HttpGet]
+        [Route("Get")]
         public async Task<IEnumerable<ProductDto>> Get()
         {
             return await _mediator.Send(new GetProductsList());
         }
         
         [HttpPost]
+        [Route("Set")]
+
         public async Task<bool> Post( PostProduct command)
         {
             return  await _mediator.Send(command);
         }
         
         [HttpPut]
+        [Route("Update")]
+
         public async Task<bool> PutAsync(UpdateProduct command)
         {
             return await _mediator.Send(command);
