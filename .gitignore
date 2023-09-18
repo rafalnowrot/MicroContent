@@ -314,3 +314,5 @@ Version.cpp
 /.vs/MicroContent/v17/.suo
 /.vs/ProjectEvaluation/microcontent.metadata.v6.1
 /.vs/ProjectEvaluation/microcontent.projects.v6.1
+/MicroContent.Products.API/obj/Debug/net7.0/MicroContent.Products.API.csproj.AssemblyReference.cache
+/MicroContent.Products.Application/obj/Debug/net7.0/MicroContent.Products.Application.csproj.AssemblyReference.cache
